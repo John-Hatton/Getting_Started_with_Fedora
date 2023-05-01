@@ -38,4 +38,35 @@ To Enable ssh do the following:
 
 ---
 
+## Setup VIM as Default Editor
+
+In order to setup VIM as the default editor, we will need to edit the .bashrc file.
+
+Append the file with the following lines:
+
+    export EDITOR=/usr/bin/vim
+
+Then to get vim working the way I like it, append the following to the .vimrc file:
+
+    syntax on
+    colorscheme slate
+    autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+    let g:go_fmt_command = "goimports"
+
+
+---
+
+
+## Add XRDP to Login from Windows
+
+In order to add XRDP, you will need to do the following:
+
+    sudo dnf install xrdp
+    sudo systemctl enable xrdp
+    sudo systemctl start xrdp
+
+Provided you've added the static-ip to the DNS server already, it should be resolvable by now. 
+This means, from Windows, we can simply give the hostname, and we can remote in via RDP!
+
+---
 
