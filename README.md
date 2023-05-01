@@ -1,4 +1,5 @@
-# Getting Started With Fedora
+#
+Getting Started With Fedora
 
 ---
 
@@ -22,7 +23,6 @@ Fedora uses nmcli for this. We will do a nmcli connection show to determine the 
 interface, and then we change the connection properties using this UUID
 
 	nmcli connection show
-
 	sudo nmcli connection modify <UUID> IPv4.address <static-ip> IPv4.gateway <gateway> IPv4.dns "<dns1>, <dns2>"
 
 For best results, perform a reboot at this step.
