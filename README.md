@@ -70,3 +70,14 @@ This means, from Windows, we can simply give the hostname, and we can remote in 
 
 ---
 
+## Installing DEV Tools
+
+
+### Installing Build Tools in Fedora
+
+The first step is getting everything ready to build and compile. For this, we can include 
+everything we could ever need with:
+
+    sudo dnf group install "C Development Tools and Libraries" "Development Tools"
+
+
