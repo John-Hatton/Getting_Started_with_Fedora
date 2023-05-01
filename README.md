@@ -85,6 +85,18 @@ If by accident the original is lost, and you would like to set it back:
     export PS1="[\u@\h \W]\$"
 
 Namaste.
+=======
+## Installing DEV Tools
+
+
+### Installing Build Tools in Fedora
+
+The first step is getting everything ready to build and compile. For this, we can include 
+everything we could ever need with:
+
+    sudo dnf group install "C Development Tools and Libraries" "Development Tools"
+
+Et voilà!
 
 ---
 
