@@ -70,3 +70,21 @@ This means, from Windows, we can simply give the hostname, and we can remote in 
 
 ---
 
+## Update Console Output
+
+
+To get things looking a bit more fresh, you will want to do the following:
+
+
+    oldps1 = $PS1
+    export PS1="\W>:"
+    echo $PS1
+
+If by accident the original is lost, and you would like to set it back:
+
+    export PS1="[\u@\h \W]\$"
+
+Namaste.
+
+---
+
