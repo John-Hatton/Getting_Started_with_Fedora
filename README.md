@@ -80,4 +80,7 @@ everything we could ever need with:
 
     sudo dnf group install "C Development Tools and Libraries" "Development Tools"
 
+Et voilà!
+
+---
 
