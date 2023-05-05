@@ -77,7 +77,7 @@ To get things looking a bit more fresh, you will want to do the following:
 
 
     oldps1 = $PS1
-    export PS1="\W>:"
+    PS1="\e[0;31m\W>:"
     echo $PS1
 
 If by accident the original is lost, and you would like to set it back:
